@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root {
+    --cor1: #C2FFDE;
+    --cor2: #16874B;
+    --cor3: #85EDB5;
+    --cor4: #0f6336;
+    --cor5: #168d4d;
+    --cor6: #14744088;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Idroid', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+p, li {
+    font-size: 1.6rem;
+}
+
+strong {
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+header {
+    text-align: center;
+    padding-top: 2.5rem;
+    min-height: 13rem;
+    background-image: linear-gradient(to top, var(--cor2), var(--cor3));
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .3);
+    width: 100%;
+}
+
+header h1 {
+    font-size: 4.6rem;
+    color: white;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+
+header p {
+    font-size: 1.7em;
+    font-weight: normal;
+    color: rgb(252, 249, 249);
+    max-width: 50rem;
+    margin: auto;
+    padding: 0 10rem 2rem;
+}
+
+nav {
+    background-color: var(--cor2);
+    text-align: left;
+    font-size: 2.3rem;
+    padding-bottom: .8rem;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .15);
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    transition-duration: .25s;
+}
+
+li a:hover {
+    color: lightgray;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+main {
+    max-width: 80rem;
+    min-width: 29rem;
+    margin: auto;
+    background-color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+main h1 {
+    font-family: var(--fonte-android);
+    font-size: 2.2rem;
+    color: var(--cor4);
+    padding-left: 2rem;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.8rem;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    margin-left: 2rem;
+    padding-left: 1rem;
+    font-weight: normal;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 3rem;
+    padding: 1.5rem 2rem;
+    line-height: 3rem;
+}
+
+main a {
+    padding-top: .1rem;
+    padding-right: .3rem;
+    padding-bottom: .1rem;
+    padding-left: .3rem;
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--cor6), var(--cor3));
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+main a::after {
+    content: url('imagens/link-conectado.png');
+    vertical-align: middle;
+    padding: .3rem;
+}
+
+
+main img {
+    width: 100%;
+}
+
+main img.bugdroid {
+    max-width: 30rem;
+    display: block;
+    margin: auto;
+}
+
+main .video {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--cor2);
+}
+
+.video > iframe {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor3);
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
+    border: 5px solid var(--cor5);
+}
+
+aside h3 {
+    background-color: var(--cor5);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+
+aside ul {
+    list-style: url('imagens/sinal-de-visto.png');
+    columns: 2;
+    list-style-position: inside;
+    padding-left: 1.8rem;
+}
+
+footer {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+}
