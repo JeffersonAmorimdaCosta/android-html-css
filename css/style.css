@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Idroid';
-    src: url('fontes/idroid.otf') format('opentype');
+    src: url('../fonts/idroid.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -158,7 +158,7 @@ main a:hover {
 }
 
 main a::after {
-    content: url('imagens/link-conectado.png');
+    content: url('../img/link-conectado.png');
     vertical-align: middle;
     padding: .3rem;
 }
@@ -203,7 +203,7 @@ aside h3 {
 
 
 aside ul {
-    list-style: url('imagens/sinal-de-visto.png');
+    list-style: url('../img/sinal-de-visto.png');
     columns: 2;
     list-style-position: inside;
     padding-left: 1.8rem;
